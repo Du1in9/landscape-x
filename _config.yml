@@ -1,0 +1,49 @@
+# Header
+menu:
+  Home: /
+  Archives: /archives
+rss: /atom.xml
+
+# Content
+excerpt_link: Read More
+fancybox: true
+
+# Sidebar
+sidebar: right
+widgets:
+- weixin
+- category
+- tag
+- tagcloud
+- archive
+- recent_posts
+- weibo
+
+# display widgets at the bottom of index pages (pagination == 2)
+index_widgets:
+# - category
+# - tagcloud
+# - archive
+
+# widget behavior
+archive_type: 'monthly'
+show_count: false
+
+# Miscellaneous
+
+favicon: /favicon.png
+twitter:
+google_plus:
+fb_admins:
+fb_app_id:
+
+# duoshuo
+duoshuo_short_name: lupeng-test
+
+# baidu_tongji
+baidu_tongji: true
+
+# weibo
+weibo:
+  height: 600
+  url: http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=600&fansRow=1&ptype=1&speed=0&skin=1&isTitle=1&noborder=0&isWeibo=1&isFans=0&uid=1934606495&verifier=a6769878&dpc=1
