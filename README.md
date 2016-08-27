@@ -1,8 +1,9 @@
-# Landscape
+# Landscape-x
 
-A brand new default theme for [Hexo].
+本主题是为了写Hexo小书（一本搭建Hexo Blog的教程）而创建的主题，旨在学习如何自定义主题
 
-- [Preview](http://hexo.io/hexo-theme-landscape/)
+欢迎访问Hexo小书 [Demo](http://hexo.lupeng.me)
+
 
 ## Installation
 
