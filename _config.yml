@@ -12,6 +12,7 @@ fancybox: true
 sidebar: right
 widgets:
 - weixin
+- calendar
 - category
 - tag
 - tagcloud
@@ -56,3 +57,6 @@ baidu_tuijian_id:
 # 填写你的域名，例如我的：http://lupeng.me
 wumii_siteprefix: 
 
+# 日历云
+calendar:
+  language: zh-CN

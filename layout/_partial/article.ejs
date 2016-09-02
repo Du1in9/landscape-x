@@ -29,6 +29,11 @@
         <a href="<%- url_for(post.path) %>#comments" class="article-comment-link"><%= __('comment') %></a>
       <% } %>
       <%- partial('post/tag') %>
+      <% if (!index){ %>
+        <span id="busuanzi_container_page_pv" style="color: #999; margin-left: 30px">
+          &阅读量<span id="busuanzi_value_page_pv"></span>次
+        </span>
+      <% } %>
     </footer>
   </div>
   <% if (!index){ %>

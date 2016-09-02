@@ -1,5 +1,23 @@
 <script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
 
+<!-- 不蒜子-计数服务 -->
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!-- calendar widget -->
+<% if (theme.widgets.indexOf('calendar') != -1){ %>
+  <script src="<%- config.root %>js/calendar.js"></script>
+  <script src="<%- config.root %>js/languages.js"></script>
+  <script type="text/javascript">
+    $(function() {
+    <% if (theme.calendar.options){ %>
+      $('#calendar').aCalendar('<%= theme.calendar.language %>', $.extend(<%- JSON.stringify(theme.calendar.options ) %>, {single:<%= theme.calendar.single %>, root:'<%= theme.calendar.root %>'});
+    <% }else{ %>
+      $('#calendar').aCalendar('<%= theme.calendar.language %>',{single:<%= theme.calendar.single %>, root:'<%= theme.calendar.root %>'});
+    <% } %>
+    });
+  </script>
+<% } %>
+
 <% if (theme.fancybox){ %>
   <%- css('fancybox/jquery.fancybox') %>
   <%- js('fancybox/jquery.fancybox.pack') %>
